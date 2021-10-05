@@ -85,7 +85,17 @@
       "setup": "javac *.java",
       "run": "java -cp . Test",
       "input": "m-7,5,3,1,0,2,4,5,7,9-4",
-      "output": "m:0,1,2,3,4,5,7,7,9",
+      "output": "m:0,1,2,3,4,5,5,7,7,9",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "merge2",
+      "setup": "javac *.java",
+      "run": "java -cp . Test",
+      "input": "m-9,7,5,3,1-4",
+      "output": "m:1,3,5,7,9",
       "comparison": "included",
       "timeout": 10,
       "points": 10
